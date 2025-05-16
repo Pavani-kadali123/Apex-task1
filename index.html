@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fine Dining Restaurant</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Delish Dine</h1>
+    <p>Empower Your Body. Energize Your Life.</p>
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"; alt="Delicious Food">
+  </header>
+  <style>
+   :root {
+      --primary: #e3690c;
+      --primary-light: #7c3aed;
+      --secondary:#a20dd9;
+      --secondary-light:#070013;
+      --dark: #18181b;
+      --light: #f8fafc;
+      --gray: #94a3b8;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-bottom-left-radius: 30% 50px;
+      border-bottom-right-radius: 30% 50px;
+      box-shadow: 0 10px 30px rgba(18, 18, 18, 0.3);
+    }
+    header img {
+      width: 200px;
+      height:250px;
+      border-radius: 20px;
+      margin-top: 20px;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+      transform: perspective(800px) rotateY(-5deg);
+      transition: transform 0.5s ease;
+    } 
+    header img:hover {
+      transform: perspective(800px) rotateY(5deg) translateY(-10px);
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    button {
+      background-color: #a795d6;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #d37407;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    a {
+      color: #ff4081;
+      text-decoration: none;
+    }
+  </style>
+  <center>
+  <section>
+    <h2>Our Specialties</h2>
+    <p>At Delish Dine, we blend the finest ingredients with elegant presentation and cozy service.
+        Join us for a culinary journey of handcrafted meals, exquisite desserts, and seasonal specials.</p>
+    <h3>Explore More</h3>
+    <p>Follow us on social media and stay updated:</p>
+    
+    <section>
+      <a href="https://www.instagram.com/foodnetwork/" target="_blank">Instagram</a>
+    </section>
+
+   </section>
+
+    <h3>Get Started</h3>
+    <p>Click the button below to Order the delicious food</p>
+    <center> 
+    <button onclick="showWelcomeMessage()">Start Now</button>
+    </center>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fine Dining Restaurant. All rights reserved.</p>
+  </footer>
+  </center>
+
+  <script>
+    function showWelcomeMessage() {
+      alert("Welcome to  Fine Dining Restaurant! Let's begin your journey!");
+    }
+  </script>
+
+</body>
+</html>
